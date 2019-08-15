@@ -1,0 +1,58 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deftab706{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}{\f1\fnil\fcharset204 Times New Roman;}{\f2\froman\fprq2\fcharset128 Times New Roman;}{\f3\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red0\green0\blue255;\red18\green100\blue163;}
+{\*\generator Riched20 10.0.17763}\viewkind4\uc1 
+\pard\nowidctlpar\fi-360\li720\f0\fs28\lang255  1)\tab\kerning1\f1\lang1049\'cd\'e5 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'fc \'f1\'eb\'e5\'e4\'f3\'fe\'f9\'e5\'e5 \'e4\'eb\'ff \'ef\'f0\'e5\'ee\'e1\'f0\'e0\'e7\'ee\'e2\'e0\'ed\'e8\'ff \'e2 \'f1\'e8\'ed\'f5\'f0\'ee\'ed\'ed\'fb\'e9 \'ea\'ee\'e4\f0\lang255\par
+
+\pard{\pntext\f3\'B7\tab}{\*\pn\pnlvlblt\pnf3\pnindent0{\pntxtb\'B7}}\nowidctlpar\fi-360\li1080 Task.Wait\par
+{\pntext\f3\'B7\tab}Task.Result\par
+{\pntext\f3\'B7\tab}\lang1033 GetAwaiter().GetResult()\lang255\par
+
+\pard\nowidctlpar\fi-360\li1440\kerning0  1.1.\tab\kerning1\f1\lang1049\'cf\'ee\'f2\'ee\'ec\'f3 \'f7\'f2\'ee \'e2\'ee\'e7\'ec\'ee\'e6\'ed\'e0 \'e2\'e7\'e0\'e8\'ec\'ee\'e1\'eb\'ee\'ea\'e8\'f0\'ee\'e2\'ea\'e0. \'cf\'f0\'e8\'ec\'e5\'f0\'fb \'e7\'e4\'e5\'f1\'fc\line {\f0\lang1033{\field{\*\fldinst{HYPERLINK https://github.com/devigo/examples/blob/master/DeadlockAspNetApi/Deadlock/Controllers/ValuesController.cs }}{\fldrslt{https://github.com/devigo/examples/blob/master/DeadlockAspNetApi/Deadlock/Controllers/ValuesController.cs\ul0\cf0}}}}\f0\fs28\lang255   \line\line {\lang1033{\field{\*\fldinst{HYPERLINK https://github.com/nimblesoftware/Ximble/commit/d0b813bc4419994abb1113db615b610a71fa5b85#diff-b4bdff1066c8788b441c5fcb0cb1a6e1R887 }}{\fldrslt{https://github.com/nimblesoftware/Ximble/commit/d0b813bc4419994abb1113db615b610a71fa5b85#diff-b4bdff1066c8788b441c5fcb0cb1a6e1R887\ul0\cf0}}}}\f0\fs28  \line\line {\lang1033{\field{\*\fldinst{HYPERLINK https://blog.stephencleary.com/2012/07/dont-block-on-async-code.html }}{\fldrslt{https://blog.stephencleary.com/2012/07/dont-block-on-async-code.html\ul0\cf0}}}}\f0\fs28  \par
+
+\pard\nowidctlpar\fi-360\li1440\kerning0  1.2.\tab\kerning1\f1\lang1049\'c2 \'f1\'eb\'f3\'f7\'e0\'e5 \'f1 \f0\lang255 Task.Wait\f1\lang1049  \'e8 Task.Result \'e8\'f1\'ea\'eb\'fe\'f7\'e5\'ed\'e8\'ff \'e2\'ed\'f3\'f2\'f0\'e8 \'ec\'e5\'f2\'ee\'e4\'e0 \'ee\'e1\'ee\'f0\'e0\'f7\'e8\'e2\'e0\'fe\'f2\'f1\'ff \'e2 AggregateException\line {\f0\lang1033{\field{\*\fldinst{HYPERLINK https://github.com/devigo/examples/blob/master/TaskExample/TaskExample/Program.cs }}{\fldrslt{https://github.com/devigo/examples/blob/master/TaskExample/TaskExample/Program.cs\ul0\cf0}}}}\f0\fs28\lang255   \par
+
+\pard\nowidctlpar\par
+
+\pard\nowidctlpar\fi-360\li720\kerning0  2)\tab\kerning1\f1\lang1049\'cd\'e5 \'ee\'e1\'f5\'ee\'e4\'e8\'f2\'fc \'e2\'e7\'e0\'e8\'ec\'ee\'e1\'eb\'ee\'ea\'e8\'f0\'ee\'e2\'ea\'e8 \'f1\'eb\'e5\'e4\'f3\'fe\'f9\'e8\'ec\'e8 \'f1\'ef\'ee\'f1\'ee\'e1\'e0\'ec\'e8\f0\lang255\par
+
+\pard\nowidctlpar\fi-360\li1080\kerning0  2.1.\tab\kerning1\b Task.Run(async () => await SomeMethodAsync).Result\b0  \f2\lang1049\endash\f0\lang1033  \f1\lang1049\'fd\'f2\'ee \'ed\'e5 \'fd\'f4\'f4\'e5\'ea\'f2\'e8\'e2\'ed\'ee\'e5 \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5 \'f0\'e5\'f1\'f3\'f0\'f1\'ee\'e2, \'e8 \'e2\'ee\'e7\'ec\'ee\'e6\'e5\'ed \'f1\'eb\'f3\'f7\'e0\'e9 \'ea\'ee\'e3\'e4\'e0 \'fd\'f2\'ee \'ed\'e5 \'f1\'f0\'e0\'e1\'ee\'f2\'e0\'e5\'f2\f0\lang255\par
+
+\pard\nowidctlpar\fi-270\li1080\kerning0  2.1.\tab\kerning1\b ConfigureAwait(false)\b0  \f2\lang1049\endash\f0\lang1033  \f1\lang1049\'e2\'ee\'e7\'ec\'ee\'e6\'e5\'ed \'f1\'eb\'f3\'f7\'e0\'e9 \'ea\'ee\'e3\'e4\'e0 \'fd\'f2\'ee \'ed\'e5 \'f1\'f0\'e0\'e1\'ee\'f2\'e0\'e5\'f2\f0\lang255\par
+
+\pard\nowidctlpar\par
+
+\pard\nowidctlpar\fi-360\li720\kerning0  3)\tab\kerning1\f1\lang1049\'c5\'f1\'eb\'e8 \'e5\'f1\'f2\'fc \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'ed\'e8\'e5 \'e0\'f1\'e8\'ed\'f5\'f0\'ee\'ed\'ed\'ee\'e3\'ee \'ec\'e5\'f2\'ee\'e4\'e0 \'e2 \'f1\'e8\'ed\'f5\'f0\'ee\'ed\'ed\'ee\'ec, \'f2\'ee \'ef\'f0\'e5\'ee\'e1\'f0\'e0\'e7\'ee\'e2\'e0\'f2\'fc \'f1\'e8\'e3\'ed\'e0\'f2\'f3\'f0\'f3 \'ea async Task\f0\lang255\par
+
+\pard\nowidctlpar\fi-360\li1080\kerning0  3.1.\tab\kerning1\f1\lang1049\'cf\'f0\'e8\'ec\'e5\'f0 1: \'ef\'f3\'eb\'eb \'f0\'e5\'ea\'e2\'e5\'f1\'f2 XIMBLE-9938: async/await refactoring\line {\f0\lang1033{\field{\*\fldinst{HYPERLINK https://github.com/nimblesoftware/Ximble/pull/2212 }}{\fldrslt{https://github.com/nimblesoftware/Ximble/pull/2212\ul0\cf0}}}}\f0\fs28\lang255\par
+\kerning0  3.2.\tab\kerning1\f1\lang1049\'cf\'f0\'e8\'ec\'e5\'f0 2: {\f0\lang255{\field{\*\fldinst{HYPERLINK https://github.com/nimblesoftware/Ximble/commit/084ae50a9eaf3dffae115b5a719eb7bb98a94d28 }}{\fldrslt{https://github.com/nimblesoftware/Ximble/commit/084ae50a9eaf3dffae115b5a719eb7bb98a94d28\ul0\cf0}}}}\f0\fs28\lang255\par
+
+\pard\nowidctlpar\par
+
+\pard\nowidctlpar\fi-360\li720\kerning0  4)\tab\kerning1\f1\lang1049\'c2\'ec\'e5\'f1\'f2\'ee Task.Factory.StartNew \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'ee\'e2\'e0\'f2\'fc Task.Run \f2\'81\'45\f1\'ee\'e1\'fa\'ff\'f1\'ed\'e5\'ed\'e8\'e5 \'e7\'e4\'e5\'f1\'fc\line {\f0\lang1033{\field{\*\fldinst{HYPERLINK https://blog.stephencleary.com/2013/08/startnew-is-dangerous.html }}{\fldrslt{https://blog.stephencleary.com/2013/08/startnew-is-dangerous.html\ul0\cf0}}}}\f0\fs28\lang255\line {\lang1033{\field{\*\fldinst{HYPERLINK https://devblogs.microsoft.com/pfxteam/task-run-vs-task-factory-startnew/ }}{\fldrslt{https://devblogs.microsoft.com/pfxteam/task-run-vs-task-factory-startnew/\ul0\cf0}}}}\f0\fs28  \par
+
+\pard\nowidctlpar\par
+
+\pard\nowidctlpar\fi-360\li720\kerning0  5)\tab\kerning1\f1\lang1049\'cd\'e5 \'f1\'ec\'e5\'f8\'e8\'e2\'e0\'f2\'fc \'ef\'e0\'f0\'e0\'eb\'eb\'e5\'eb\'fc\'ed\'fb\'e9 \'e8 \'e0\'f1\'e8\'ed\'f5\'f0\'ee\'ed\'ed\'fb\'e9 \'ea\'ee\'e4\f0\lang255\par
+
+\pard\nowidctlpar\par
+
+\pard\nowidctlpar\fi-360\li720\kerning0  6)\tab\kerning1\f1\lang1049\'d7\'e8\'f2\'e0\'f2\'fc \'f5\'ee\'f2\'ff \'e1\'fb \'f2\'ee \'f7\'f2\'ee \'e4\'eb\'ff \'ed\'e8\'f5 \'e2\'fb\'e1\'f0\'e0\'eb\'e8 \'e8 \'f1\'ea\'e8\'ed\'f3\'eb\'e8 \'ef\'ee \'e4\'e0\'ed\'ed\'ee\'e9 \'f2\'e5\'ec\'e0\'f2\'e8\'ea\'e5\line {\f0\lang255{\field{\*\fldinst{HYPERLINK https://blog.stephencleary.com/2012/07/dont-block-on-async-code.html }}{\fldrslt{https://blog.stephencleary.com/2012/07/dont-block-on-async-code.html\ul0\cf0}}}}\f0\fs28\lang255\line {{\field{\*\fldinst{HYPERLINK https://blog.stephencleary.com/2012/02/async-and-await.html }}{\fldrslt{https://blog.stephencleary.com/2012/02/async-and-await.html\ul0\cf0}}}}\f0\fs28\line {{\field{\*\fldinst{HYPERLINK https://msdn.microsoft.com/magazine/jj991977?f=255&MSPPError=-2147217396 }}{\fldrslt{https://msdn.microsoft.com/magazine/jj991977?f=255&MSPPError=-2147217396\ul0\cf0}}}}\f0\fs28\line {{\field{\*\fldinst{HYPERLINK https://msdn.microsoft.com/en-us/magazine/dn802603.aspx?f=255&MSPPError=-2147217396 }}{\fldrslt{https://msdn.microsoft.com/en-us/magazine/dn802603.aspx?f=255&MSPPError=-2147217396\ul0\cf0}}}}\f0\fs28\line {{\field{\*\fldinst{HYPERLINK https://docs.microsoft.com/en-us/dotnet/csharp/async }}{\fldrslt{https://docs.microsoft.com/en-us/dotnet/csharp/async\ul0\cf0}}}}\f0\fs28\line {\cf2{\field{\*\fldinst{HYPERLINK https://blog.stephencleary.com/2013/08/startnew-is-dangerous.html }}{\fldrslt{https://blog.stephencleary.com/2013/08/startnew-is-dangerous.html\ul0\cf0}}}}\cf2\f0\fs28\line\line {\cf0{\field{\*\fldinst{HYPERLINK https://blog.stephencleary.com/2013/08/startnew-is-dangerous.html }}{\fldrslt{https://blog.stephencleary.com/2013/08/startnew-is-dangerous.html\ul0\cf0}}}}\cf0\f0\fs28\line {{\field{\*\fldinst{HYPERLINK https://devblogs.microsoft.com/pfxteam/task-run-vs-task-factory-startnew/ }}{\fldrslt{https://devblogs.microsoft.com/pfxteam/task-run-vs-task-factory-startnew/\ul0\cf0}}}}\f0\fs28\line\line {{\field{\*\fldinst{HYPERLINK https://blog.stephencleary.com/2014/04/a-tour-of-task-part-0-overview.html }}{\fldrslt{https://blog.stephencleary.com/2014/04/a-tour-of-task-part-0-overview.html\ul0\cf0}}}}\f0\fs28  \line {{\field{\*\fldinst{HYPERLINK https://blog.stephencleary.com/2013/01/async-oop-0-introduction.html }}{\fldrslt{https://blog.stephencleary.com/2013/01/async-oop-0-introduction.html\ul0\cf0}}}}\f0\fs28  \line\par
+
+\pard\nowidctlpar\par
+
+\pard\nowidctlpar\fi-360\li720\kerning0  7)\tab\kerning1\f1\lang1049\'cf\'ee\'f1\'ec\'ee\'f2\'f0\'e5\'f2\'fc \'fd\'f2\'ee\'f2 \'ef\'f3\'eb\'eb \'f0\'e5\'ea\'e2\'e5\'f1\'f2 XIMBLE-9938: async/await refactoring\line {\f0\lang255{\field{\*\fldinst{HYPERLINK https://github.com/nimblesoftware/Ximble/pull/2212 }}{\fldrslt{https://github.com/nimblesoftware/Ximble/pull/2212\ul0\cf0}}}}\f0\fs28\lang255\line\par
+\kerning0  8)\tab\kerning1\f1\lang1049\'ca\'e0\'ea \'ef\'f0\'e8\'e2\'e5\'f1\'f2\'e8 \'ec\'e5\'f2\'ee\'e4 \'ea \f0\lang1033 async/await, \f1\lang1049\'ef\'ee\'ea\'e0\'e7\'e0\'ed\'ee \'e7\'e4\'e5\'f1\'fc\f0\lang255\line {{\field{\*\fldinst{HYPERLINK https://github.com/nimblesoftware/Ximble/commit/084ae50a9eaf3dffae115b5a719eb7bb98a94d28 }}{\fldrslt{https://github.com/nimblesoftware/Ximble/commit/084ae50a9eaf3dffae115b5a719eb7bb98a94d28\ul0\cf0}}}}\f0\fs28\par
+
+\pard\nowidctlpar\par
+
+\pard\nowidctlpar\fi-360\li720\kerning0  9)\tab\kerning1\f1\lang1049\'ce\'e1\'fa\'ff\'f1\'ed\'e5\'ed\'e8\'e5 \'e4\'eb\'ff \'f7\'e5\'e3\'ee \'e8\'f1\'ef\'ee\'eb\'fc\'e7\'f3\'fe\'f2 ConfigureAwait(false)\line {\f0\lang255{\field{\*\fldinst{HYPERLINK https://stackoverflow.com/questions/13489065/best-practice-to-call-configureawait-for-all-server-side-code }}{\fldrslt{https://stackoverflow.com/questions/13489065/best-practice-to-call-configureawait-for-all-server-side-code\ul0\cf0}}}}\f0\fs28\lang255  \par
+
+\pard\nowidctlpar\par
+
+\pard\nowidctlpar\fi-360\li720\kerning0  10)\tab\kerning1 C# Async Tips & Tricks: {{\field{\*\fldinst{HYPERLINK https://cpratt.co/async-tips-tricks/ }}{\fldrslt{https://cpratt.co/async-tips-tricks/\ul0\cf0}}}}\f0\fs28  \par
+
+\pard\nowidctlpar\par
+
+\pard\nowidctlpar\fi-360\li720\kerning0  11)\tab\kerning1\par
+}
+ 
